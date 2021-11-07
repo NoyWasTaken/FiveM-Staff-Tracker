@@ -54,7 +54,26 @@ if usingQbus then
             end
         end
     end)
+elseif usingEsx then
+    AddEventHandler('es:playerLoaded', function()
+        local player = core.GetPlayerFromId(source)
+        if player ~= nil then
+            if player.GetGroup() ~= PERMISSION_PLAYER then
+                updateStaffCount(staffCount + 1)
+            end
+        end
+    end)
+
+    AddEventHandler("playerDropped", function()
+        local player = core.GetPlayerFromId(source)
+        if player ~= nil then
+            if player.GetGroup() ~= PERMISSION_PLAYER then
+                updateStaffCount(staffCount - 1)
+            end
+        end
+    end)
 end
 
 function updateStaffCount(count)
+    staffCount = count
 end
