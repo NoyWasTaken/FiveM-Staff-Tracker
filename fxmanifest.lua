@@ -7,5 +7,6 @@ version '1.0b'
 
 server_scripts {
     'config.lua',
+    '@mysql-async/lib/MySQL.lua',
     'server/server.lua'
 }
