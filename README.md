@@ -4,8 +4,8 @@ The resource detects a new connection of staff member and updates his playtime o
 The system knows to detect the time where the server has no admins online and store it as well in the database.
 
 # Supported Frameworks:
-[https://github.com/esx-framework/es_extended](ESX)
-[https://github.com/qbcore-framework/qb-core](QBus)
+###### [ESX](https://github.com/esx-framework/es_extended) ######
+###### [QBus](https://github.com/qbcore-framework/qb-core) ######
 
 # Dependencies
-[https://github.com/ESX-Brasil/mysql-async](mysql-async)
+###### [mysql-async](https://github.com/ESX-Brasil/mysql-async) ######
