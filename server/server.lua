@@ -101,6 +101,8 @@ function staffMemberConnect(src)
     staffData[src] = {}
     staffData[src]["connect"] = getTimestamp()
     updateStaffCount(staffCount + 1)
+
+    print("Detected staff member connection: " .. GetPlayerName(src) .. "(" .. staffCount .. ")")
 end
 
 function staffMemberDisconnect(src)
@@ -109,6 +111,8 @@ function staffMemberDisconnect(src)
 
     staffData[src] = nil
     updateStaffCount(staffCount - 1)
+
+    print("Detected staff member disconnect: " .. GetPlayerName(src) .. "(" .. staffCount .. ")")
 end
 
 function updateStaffCount(count)
